@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "N ",
+    " S"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:iron_nugget"
+    },
+    "S": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "result": {
+    "id": "create_var_tag:var_tag",
+    "count": 1
+  }
+}

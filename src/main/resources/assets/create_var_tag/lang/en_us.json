@@ -1,0 +1,5 @@
+{
+  "itemGroup.create_var_tag": "Create: Var Tag",
+  "item.create_var_tag.var_tag": "Var Tag: %s",
+  "item.create_var_tag.var_tag.tooltip": "A variable tag. Right click to set the variable name, and use the named var tag to set the redstong link frequency. Only redstong links with the same variable name will be connected."
+}
