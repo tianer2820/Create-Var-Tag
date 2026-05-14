@@ -29,12 +29,16 @@ public class VarTagMod {
     public static final DeferredItem<VarTagItem> VAR_TAG_ITEM = ITEMS.register("var_tag",
             () -> new VarTagItem(new Item.Properties()));
 
+    public static final DeferredItem<ConversionWandItem> CONVERSION_WAND_ITEM = ITEMS.register("conversion_wand",
+            () -> new ConversionWandItem(new Item.Properties()));
+
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> VAR_TAG_TAB = CREATIVE_MODE_TABS
             .register("var_tag_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.create_var_tag"))
                     .icon(() -> VAR_TAG_ITEM.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
                         output.accept(VAR_TAG_ITEM.get());
+                        output.accept(CONVERSION_WAND_ITEM.get());
                     }).build());
 
     public VarTagMod(IEventBus modEventBus, ModContainer modContainer) {
