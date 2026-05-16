@@ -71,7 +71,7 @@ public class VarTagItem extends Item {
                     .sorted(Map.Entry.comparingByValue())
                     .map(Map.Entry::getKey)
                     .filter(name -> !name.isEmpty())
-                    .limit(12)
+                    .limit(128)
                     .toList();
 
             net.neoforged.neoforge.network.PacketDistributor.sendToPlayer(

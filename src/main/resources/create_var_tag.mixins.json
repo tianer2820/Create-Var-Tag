@@ -5,6 +5,9 @@
   "mixins": [
     "RedstoneLinkFrequencyMixin"
   ],
+  "client": [
+    "LinkRendererMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },
